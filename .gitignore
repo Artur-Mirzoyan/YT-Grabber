@@ -1,0 +1,15 @@
+.idea/
+*.iml
+*.iws
+out/
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+backend/downloads/
+
+.DS_Store
+Thumbs.db

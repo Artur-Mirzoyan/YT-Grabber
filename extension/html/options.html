@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>YT Grabber settings</title>
+    <link rel="stylesheet" href="../styles/options.css">
+</head>
+<body>
+<main>
+    <h1>Server settings</h1>
+    <p class="lede">YT Grabber sends videos to a server you run yourself. Start it first (see the README), then enter
+        its address here.</p>
+
+    <label for="serverUrl">Server address</label>
+    <input id="serverUrl" type="url" placeholder="http://127.0.0.1:5000" spellcheck="false">
+
+    <label for="apiKey">API key <span class="opt">(only if you set one on the server)</span></label>
+    <input id="apiKey" type="password" autocomplete="off" spellcheck="false">
+
+    <div class="row">
+        <button id="save" type="button">Save</button>
+        <button id="test" type="button" class="secondary">Test connection</button>
+    </div>
+    <p id="msg" class="msg" role="status"></p>
+
+    <p class="legal">Only download videos you own or have permission to download. You are responsible for following
+        YouTube's Terms of Service and copyright law. This project is not affiliated with YouTube or Google.</p>
+</main>
+<script src="../scripts/options.js"></script>
+</body>
+</html>

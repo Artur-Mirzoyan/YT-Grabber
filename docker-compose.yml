@@ -1,0 +1,10 @@
+services:
+  yt-grabber:
+    build: ./backend
+    # Bound to this computer only. To allow other devices, change to "5000:5000"
+    # AND set API_KEY below (and ideally put HTTPS in front of it).
+    ports:
+      - "127.0.0.1:5000:5000"
+    environment:
+      API_KEY: ${API_KEY:-}
+    restart: unless-stopped

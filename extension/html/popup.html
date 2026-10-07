@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../styles/popup.css">
+</head>
+<body>
+<p id="title" class="title">Open a YouTube video to begin.</p>
+
+<fieldset class="formats" aria-label="Format">
+    <label><input type="radio" name="format" value="mp4" checked><span>MP4 video</span></label>
+    <label><input type="radio" name="format" value="mp3"><span>MP3 audio</span></label>
+</fieldset>
+
+<button id="go" type="button" disabled>Download</button>
+<div id="bar" class="bar" role="progressbar" aria-label="Download progress" aria-valuemin="0" aria-valuemax="100"
+     hidden>
+    <div id="fill"></div>
+</div>
+<p id="status" class="status" role="status"></p>
+<button id="settings" type="button" class="link">Server settings</button>
+
+<script src="../scripts/popup.js"></script>
+</body>
+</html>
