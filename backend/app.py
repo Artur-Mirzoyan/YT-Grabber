@@ -65,7 +65,7 @@ def build_options(fmt: str, job_dir: Path) -> dict:
         opts.update(
             format="bestaudio/best",
             postprocessors=[
-                {"key": "FFmpegExtractAudio", "preferredcodec": "mp3", "preferredquality": "192"}
+                {"key": "FFmpegExtractAudio", "preferredcodec": "mp3", "preferredquality": "320"}
             ],
         )
     else:
